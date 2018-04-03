@@ -1,8 +1,8 @@
-pipeline:
+publish:
   publish-api-docker:
     image: plugins/docker
-    username: jsoude
-    password: mv1gzksw
+    username: "jsoude"
+    password: "mv1gzksw"
     email: jsoude@gmail.com
     repo: jsoude/influxdb-collectd
     tags:
