@@ -3,4 +3,5 @@ pipeline:
     image: jsoude/influxdb-collectd
     username: jsoude    
     password: mv1gzksw
+    repo: jsoude/influxdb-collectd
     auto_tag: true
