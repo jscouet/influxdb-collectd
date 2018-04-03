@@ -1,4 +1,4 @@
-publish:
+pipeline:
   publish:
     image: plugins/docker
     username: "jsoude"
