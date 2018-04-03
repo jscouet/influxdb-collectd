@@ -1,5 +1,5 @@
 publish:
-  publish-api-docker:
+  publish:
     image: plugins/docker
     username: "jsoude"
     password: "mv1gzksw"
