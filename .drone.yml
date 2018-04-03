@@ -1,0 +1,5 @@
+pipeline:
+  docker:
+    image: jsoude/influxdb-collectd
+    username: jsoude    
+    password: mv1gzksw
