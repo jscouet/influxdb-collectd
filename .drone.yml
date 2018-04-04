@@ -1,9 +1,6 @@
 pipeline:
   publish:
     image: plugins/docker
-    username: "jsoude"
-    password: "mv1gzksw"
-    email: jsoude@gmail.com
     repo: jsoude/influxdb-collectd
     tags:
       - latest
