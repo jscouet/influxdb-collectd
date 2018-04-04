@@ -1,13 +1,10 @@
 pipeline:
   publish:
     image: plugins/docker
-    username: jsoude
-    password: mv1gzksw
+    username: ${docker_username}
+    password: ${docker_password}
     repo: jsoude/influxdb-collectd
     tags:
       - latest
       
-  slack:
-    image: plugins/slack
-    webhook: https://hooks.slack.com/services/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
-    token: xoxp-317943866691-318892582582-318895994070-644faf4d0446ea3b3bdedaddc3be87ae    
+  
