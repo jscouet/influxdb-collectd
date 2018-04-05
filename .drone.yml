@@ -8,6 +8,6 @@ pipeline:
      
   slack:
     image: plugins/slack
-    webhook: https://hooks.slack.com/services/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
+    secrets: [ slack_webhook ]
       
   
