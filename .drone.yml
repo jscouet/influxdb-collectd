@@ -7,4 +7,9 @@ pipeline:
     tags:
       - 1.4
       - latest
-
+ 
+  slack:
+    image: plugins/slack
+    secrets: [ slack_webhook ]
+      
+  
