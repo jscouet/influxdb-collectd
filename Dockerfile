@@ -1,5 +1,4 @@
 # create image of influxd_VERSIb for receiving collectd info
-FROM influxdb:${ INFLUXDB_VERSION }
 FROM influxdb:1.5.3
 
 RUN echo "new image influxdb for collectd listen"
