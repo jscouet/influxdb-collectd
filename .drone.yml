@@ -6,7 +6,7 @@ pipeline:
     repo: jsoude/influxdb-collectd
     secrets: [ docker_username, docker_password ]
     tags:
-      - ${ INFLUXDB_VERSION }
+      - $${ INFLUXDB_VERSION }
       - latest
   slack:
     image: plugins/slack
