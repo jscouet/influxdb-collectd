@@ -2,11 +2,11 @@ pipeline:
   publish:
     image: plugins/docker
     environment:
-      - INFLUXDB_VERSION=1.5.4
+      - INFLUXDB_VERSION=1.6.4
     repo: jsoude/influxdb-collectd
     secrets: [ docker_username, docker_password ]
     tags:
-      - 1.5.4
+      - 1.6.4
       - latest
   slack:
     image: plugins/slack
