@@ -5,7 +5,6 @@ RUN echo "new image influxdb for collectd listen"
 
 RUN mkdir /usr/share/collectd/
 
-#COPY influxdb/config/collectd.conf /etc/collectd/collectd.conf
 COPY influxdb/config/influxdb.conf /etc/influxdb/influxdb.conf
 COPY influxdb/config/types.db /usr/share/collectd/types.db
 
