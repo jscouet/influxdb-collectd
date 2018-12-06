@@ -13,7 +13,10 @@ steps:
       from_secret: docker_username
     password:
       from_secret: docker_password
-- name: notification
-  slack:
-    image: plugins/slack      
+- name: slack notification
+    image: plugins/slack
+      settings:
+        webhook:
+          from_secret: slack_webhook
+        channel: code  
   
