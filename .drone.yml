@@ -9,14 +9,7 @@ steps:
     tags: 
       - latest
       - 1.6.4
-    username:
-      from_secret: docker_username
-    password:
-      from_secret: docker_password
 - name: slack notification
     image: plugins/slack
-      settings:
-        webhook:
-          from_secret: slack_webhook
         channel: code  
   
