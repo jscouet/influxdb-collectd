@@ -1,15 +1,16 @@
-pipeline:
-  publish:
-    image: plugins/docker
-    environment:
-      - INFLUXDB_VERSION=1.6.4
+kind: pipeline
+name: default
+
+steps:
+- name: build
+  image: plugins/docker
+  settings:
     repo: jsoude/influxdb-collectd
-    secrets: [ docker_username, docker_password ]
-    tags:
-      - 1.6.4
+    tags: 
       - latest
-  slack:
-    image: plugins/slack
-    secrets: [ slack_webhook ]
-      
+      - 1.6.4
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
   
