@@ -9,7 +9,5 @@ steps:
     tags: 
       - latest
       - 1.6.4
-- name: slack notification
-    image: plugins/slack
-        channel: code  
+
   
