@@ -1,5 +1,5 @@
 # create image of influxd_VERSIb for receiving collectd info
-FROM influxdb:1.6.4
+FROM influxdb:1.6.5
 
 RUN echo "new image influxdb for collectd listen"
 
